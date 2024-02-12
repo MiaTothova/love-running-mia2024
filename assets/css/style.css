@@ -20,7 +20,12 @@ body {
 
 /* Header */
 header {
-    background-color: lightcoral;
+    background-color: #ffffff;
+    padding: 0 1rem; /*to prevent text sticking to the sides*/
+    position: fixed;
+    z-index: 99;  /* LOOK THIS UP */
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a; /* Look up box shadow. */
 }
 
 h1 {
