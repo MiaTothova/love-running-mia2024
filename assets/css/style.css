@@ -1,4 +1,4 @@
-/* Google fonts import 2nd style*/
+/* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 /* Asterisk wildcard selector to override default styles added by the browser */
@@ -21,11 +21,11 @@ body {
 /* Header */
 header {
     background-color: #ffffff;
-    padding: 0 1rem; /*to prevent text sticking to the sides*/
+    padding: 0 1rem;
     position: fixed;
-    z-index: 99;  /* LOOK THIS UP */
+    z-index: 99;
     width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a; /* Look up box shadow. */
+    box-shadow: 0 2px 2px #3a3a3a;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -57,7 +57,7 @@ h1 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* navbar styles with dropdown toggle */
+/* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
     background-color: #ffffff;
@@ -67,7 +67,6 @@ nav {
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
     top: 100%;
-
 }
 
 /* Nav toggle */
@@ -75,46 +74,45 @@ nav {
     display: block;
 }
 
-.nav-toggle-label {
-    font-size: 2rem;
-}
-
 #nav-toggle {
     display: none;
 }
 
-/* Main Content */
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+/* Main content */
 main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
 }
 
+/* Hero section */
 #hero {
     height: 600px;
     width: 100%;
-    background: url("/assets/images/hero-image.webp") no-repeat center center/cover;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
 }
 
-/*Footer*/
+/* Footer */
 #social-networks {
     text-align: center;
     padding: 20px 0;
     display: flex;
     justify-content: space-evenly;
-    list-style-type: none;/* to hide bullet points - because these are list item*/
+    list-style-type: none;
 }
 
 #social-networks i {
     font-size: 160%;
     padding: 5%;
-    color: #3a3a3a; /* to expand the size of icons and make same color as header ect...*/
+    color: #3a3a3a;
 }
 
-
-
 /* Media query: tablets and larger (768px and up) */
-@media screen and (min-width:768px){
+@media screen and (min-width: 768px) {
     /* Header */
     nav {
         display: block;
@@ -142,18 +140,16 @@ main {
         margin: 0 0.5rem;
     }
 
-    /* Main Content */
+    /* Main content */
     main {
         /* Push main content down to accommodate larger header */
         margin-top: 79px;
     }
-
-
 }
 
-/* Media query: tablets and larger (992px and up) */
-@media screen and (min-width:992px){
-    #menu a:hover {
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover{
         border-bottom: 1px solid #3a3a3a;
     }
 }
