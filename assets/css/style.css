@@ -190,6 +190,18 @@ main {
     color: #fafafa;
 }
 
+
+/*  --------------------- GALLERY PAGE ----------------  */
+
+#photos img {
+    width: 100%; /*makes photos responsive*/
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
